@@ -1,0 +1,36 @@
+body {
+        background-image: url(images/random_title.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+}
+
+
+.border {
+    border: 2px solid;
+    width: 700px;
+    align-items: center;
+    margin-left: 27%;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 3);
+}
+
+.but_home {
+    font-size: 20px;
+    position:  relative;
+    margin-left: 80%;
+    margin-top: 1%;
+}
+
+.but_ht {
+    text-decoration: none; 
+    color: black;
+    font-size: 20px;
+    padding: 20px 15px;
+}
+
+.but_ht:hover {
+    text-decoration: underline;
+    color: white;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Random</title>
+    <link rel="stylesheet" href="rstyle.css">
+</head>
+<body style="text-align: center;">
+
+    <script>
+        function random2() {
+            y = [ ];
+            range = document.forms["myForm"]["range"].value;
+            max = document.forms["myForm"]["max_num"].value;
+            for(let i = 0; i < range;i ++){
+                let x = (Math.round(Math.random() * max));
+                y.push(" "+  x+ " ");
+            }            
+            document.getElementById("answer").innerHTML = "Result: " + y ;
+            document.getElementById('demo').innerHTML = Date()
+        }
+
+    </script>
+<div class="border">
+ <form name="myForm">
+    <button class="but_home"><a href=index.html class="but_ht">Home</a></button>
+    <label for="max_num"> <h2>Please enter max number: </h2></label>
+    <input type="input" id="max_num">
+    <label for="range"> <h2>How many numbers do you want to generate? </h2></label>
+    <input type="input" id="range">
+</form>
+<br>
+<button onclick="random2()" style="font-size: 20px;">Generate</button>
+<h2 id="answer"></h2>
+<p id="demo"></p>
+</div>
+</body>
+</html>
